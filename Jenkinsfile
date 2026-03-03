@@ -4,7 +4,7 @@ pipeline {
     }
     tools {
         maven "maven-3-6-3"
-        jdk "jdk-8"
+        jdk "jdk-11"
     }
     environment {
         DOCKER_USERNAME = credentials("docker-username")
