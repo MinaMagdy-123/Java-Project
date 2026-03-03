@@ -6,10 +6,10 @@ pipeline {
         maven "maven-3-5-4"
         jdk "jdk-11"
     }
-    // environment {
-    //     DOCKER_USERNAME = credentials("docker-username")
-    //     DOCKER_PASSWORD = credentials("docker-password")
-    // }
+    environment {
+        DOCKER_USERNAME = credentials("docker-username")
+        DOCKER_PASSWORD = credentials("docker-password")
+    }
     stages {
         stage("Build Application") {
             steps {
